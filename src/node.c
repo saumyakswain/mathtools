@@ -29,13 +29,13 @@ int get_ab(node *n,double *a,double *b)
 	node *n1=n->d.fn_ptr.node1, *n2=n->d.fn_ptr.node2;
 	*a=n1->method->eval_v(n1);
 	*b=n2->method->eval_v(n2);	
-return 1;
+	return 1;
 }
 int get_a(node *n,double *a)
 {
 	node *n1=n->d.fn_ptr.node1;
 	*a=n1->method->eval_v(n1);
-return 1;
+	return 1;
 }
 
 node *n_add(node *n, node *t)
