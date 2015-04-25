@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Math</title>
+		<script type="text/javascript">
+			/*function evaluate(){
+				document.write("evl cld");
+				xhr=new XMLHttpRequest();
+				url=document.getElelementById("url").value;
+				param=document.getElelementById("ip_wnd").value;
+				xhr.open("GET",url+"?"+param,true);
+				xhr.onreadystatechange=function ()
+				{
+					//if(xhr.readyState==4 && xhr.status==200)
+					document.getElementById("op_wnd").value+=xhr.responseText;
+				}
+				xhr.send(null);
+			}*/
+			function abcd()
+			{
+				xhr=new XMLHttpRequest();
+				param=document.getElementById("ip_wnd").value;
+				xhr.open("POST","",true);
+				xhr.onreadystatechange=function ()
+				{
+					if(xhr.readyState==4 && xhr.status==200)
+					document.getElementById("op_wnd").value+=xhr.responseText;
+				}
+				xhr.send(param+"q;");
+			}
+		</script>
+	</head>
+	<body>
+		<h1>HI</h1>
+		<p>Please enter a command below and press submit</p>
+		<textarea id="ip_wnd" rows="4" cols="100"></textarea>
+		<button onclick="abcd();">Evaluate</button><br/>
+		<textarea id="op_wnd" rows="40" cols="100"></textarea>
+	</body>
+</html>
