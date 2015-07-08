@@ -4,7 +4,7 @@ CFLAGS				= -Wall -g
 # 
 OBJDIR := ../obj
 EXECDIR := ../bin
-OBJS := $(addprefix $(OBJDIR)/,main.o matsolve.o common.o node.o cmd.o mat.o node.o num_methods.o btree.o)
+OBJS := $(addprefix $(OBJDIR)/,main.o matsolve.o common.o node.o cmd.o mat.o node.o num_methods.o avl_tree.o)
 EXEC := $(addprefix $(EXECDIR)/,matsolve)
 
 # Object files.
