@@ -1,5 +1,5 @@
 y:x^2+4;
-nwt:y,x,5;
+NEWTON:y,x,5;
 $x;
 $y;
 q;
